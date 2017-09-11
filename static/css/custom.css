@@ -24,14 +24,21 @@ body{
   background: #46b8da;
 }
 
+@media screen and (min-device-width: 826px){
 .well{
   width: 50%;
   margin: 12% auto auto auto;
 }
+}
 
-@media screen and (max-device-width: 699px) {
+
+@media screen and (max-device-width: 825px) {
   .well{
     width:100%;
-    margin: 50% auto auto auto;
+    height: 100%;
+    margin: 90% auto auto auto;
+    /*font-size: 50px;*/
+    transform: perspective(700px) translateZ(300px);
+    
   }
 }

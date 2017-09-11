@@ -9,8 +9,10 @@
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-<div class="container text-center">
-	<div class="well">
+<div class="container text-center container-fluid">
+<div class="row">
+<div class="col-md-12">
+	<div class="well well-lg">
 		<h2>What's it like outside?</h2>
 		<button id="getButton" class="btn-lg btn-info">Get Weather</button>
 		<div class="loader center-block" style="display: none;"></div>
@@ -21,6 +23,8 @@
 			<p  id="description"></p>
 			<img src="" id="icon">
 		</div>
+	</div>
+	</div>
 	</div>
 </div>
 	<script src="{{ url_for('static',filename='js/countryCode.js') }}"></script>
