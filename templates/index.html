@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Weather</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/custom.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<div class="container text-center">
+	<div class="well">
+		<h2>What's it like outside?</h2>
+		<button id="getButton" class="btn-lg btn-info">Get Weather</button>
+		<div class="loader center-block" style="display: none;"></div>
+		<div class="weatherInfo" style="display: none;">
+			<h3 id="country"></h3>
+			<h4 id="area"></h4>
+			<p  id="temperature" class=""></p>
+			<p  id="description"></p>
+			<img src="" id="icon">
+		</div>
+	</div>
+</div>
+	<script src="{{ url_for('static',filename='js/countryCode.js') }}"></script>
+	<script src="{{ url_for('static',filename='js/handler.js') }}"></script>
+</body>
+</html>
