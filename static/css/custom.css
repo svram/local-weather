@@ -23,3 +23,14 @@ body{
   font-family: 'Raleway', sans-serif;
   background: #46b8da;
 }
+
+.well{
+  width: 50%;
+  margin: 12% auto auto auto;
+}
+
+@media screen and (max-width: 699px) {
+  .well{
+    width:100%;
+  }
+}
